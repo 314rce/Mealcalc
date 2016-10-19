@@ -81,7 +81,7 @@ Pierce.pushToBill();
 Sara.pushToBill();
 Garrett.pushToBill();
 
-//main UI
+//main 
 console.log(Pierce.name);
 console.log(Pierce.ateName);
 console.log(Pierce.ateCost);
