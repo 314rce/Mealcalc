@@ -5,35 +5,35 @@ var eggRoll=[2.20, "Egg Rolls (2)"];
 var taco=[3.49, "Tacos(3)"];
 var lemonade=[1.50, "Drink"];
 
-//the diner class
+//the diner object
 var diner = {
   name: "",
   ateCost: [],
 
-  subtotal: function(){
+  subtotal: function(){ //get subtotal of this diner
     var sub = 0;
     for(var i=0;i<this.ateCost.length;i++){
       sub+=this.ateCost[i];
     }
     return (sub).toFixed(2);
   },
-  tax: function(){
+  tax: function(){ //get amount of tax only 
     return (this.subtotal()* 0.07).toFixed(2);
   },
-  total: function(){
+  total: function(){ //sub and tax
     return (this.subtotal()*1.07).toFixed(2);
   },
-  tip: function(){
+  tip: function(){ //tip applied on total
     return (this.total()*0.2).toFixed(2); // 20%tip
   },
-  pushToBill: function(){
+  pushToBill: function(){ //adds cost of each item a diner ate to the bill
     this.ateCost.forEach(function(value){
       Bill.totalCost.push(value);
     });
   }
 }
 
-//the bill class for multiple diners
+//the bill object for multiple diners
 var bill = {
   totalCost: [], // an array comtaining ateCost of every diner
   diners: [diner],
@@ -108,5 +108,3 @@ console.log("The subtotal of all meals. . . " );
 console.log(Bill.subtotal());
 console.log("The subtotal + tax of 7%. . . ");
 console.log(Bill.total() + " (optional +20% = " + Bill.tip() + ")");
-console.log();
-console.log(Pierce);
