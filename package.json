@@ -1,0 +1,19 @@
+{
+  "name": "meal-calculator",
+  "version": "0.0.0",
+  "description": "A meal cost calculator",
+  "main": "mealcalc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/314rce/Mealcalc.git"
+  },
+  "author": "Pierce Byers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/314rce/Mealcalc/issues"
+  },
+  "homepage": "https://github.com/314rce/Mealcalc#readme"
+}
